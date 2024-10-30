@@ -1,0 +1,83 @@
+/* app container takes full height and uses flex  */
+.App {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Outline the sidebar */
+.Sidebar {
+  height: 100%;
+  width: 250px;
+  border-right: 1px solid lightgrey;
+  flex-shrink: 0; /* prevent sidebar from shrinking */
+}
+
+/* List items: title */
+.SidebarList {
+  height: auto;
+  width: 100%;
+
+  /* Remove padding and marigin */
+  margin: 0;
+  padding: 0;
+}
+
+.SidebarList .row {
+  width: 100%;
+  /* each row is given a height of 45px */
+  height: 45px;
+  /* no bullet points */
+  list-style-type: none;
+  /* items side by side */
+  display: flex;
+  flex-direction: row;
+  /* color */
+  color: black;
+  /* centering items: x-axis */
+  justify-content: center;
+
+  /* centering items: y-axis */
+  align-items: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.SidebarList .row:hover {
+  cursor: pointer;
+  background-color: lightgrey;
+}
+
+/* styling for icon */
+.row #icon {
+  flex: 30%;
+  display: grid;
+  place-items: center;
+}
+
+/* styling for title */
+.row #title {
+  flex: 70%;
+}
+#active {
+  background-color: lightgrey;
+}
+
+/* CSS for auth page */
+.layout {
+  display: flex;
+  height: 100%;
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

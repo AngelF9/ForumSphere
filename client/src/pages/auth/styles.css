@@ -1,0 +1,36 @@
+/* Main container for authentication section */
+.auth-container-two {
+  width: 100%;
+  max-width: 450px; /* Adjust based on your preference */
+  margin: 50px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Container for Google login button */
+.google-login {
+  margin-top: 20px;
+}
+
+/* Button styling */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #357ae8;
+}
